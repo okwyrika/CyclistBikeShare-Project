@@ -206,3 +206,126 @@ group by rideable_type;
 
 ### Most Popular Stations
 
+Looking out for the most frequently used stations by member and casual riders, I decided gto first find the most popular start stations for members and casual riders.
+
+```{sql}
+select start_station_name, count(*) as rides_taken
+from bikeshare_trip_bkp
+where member_casual = 'member' 
+and trip_duration >0 
+and trip_duration <1440
+group by start_station_name
+order by rides_taken desc;
+```
+
+```{sql}
+select start_station_name, count(*) as rides_taken
+from bikeshare_trip_bkp
+where member_casual = 'casual' 
+and trip_duration >0 
+and trip_duration <1440
+group by start_station_name
+order by rides_taken desc;
+```
+
+Finding the most popular end stations for members and casuals
+
+```{sql]
+select end_station_name, count(*) as rides_taken
+from bikeshare_trip_bkp
+where member_casual = 'member' 
+and trip_duration >0 
+and trip_duration <1440
+group by end_station_name
+order by rides_taken desc;
+```
+
+```{sql}
+select end_station_name, count(*) as rides_taken
+from bikeshare_trip_bkp
+where member_casual = 'casual' 
+and trip_duration >0 
+and trip_duration <1440
+group by end_station_name
+order by rides_taken desc;
+```
+
+### Number Of Rides
+
+To know how many rides were taken by members and how many by casuals
+
+```{sql}
+select member_casual, count(*) as rides_taken
+from bikeshare_trip_bkp
+where trip_duration >0 
+and trip_duration <1440
+group by member_casual;
+```
+
+How many rides were taken on each day of the week by member and casual riders?
+
+```[sql}
+select dayname(started_at) as days, count(*) as rides_taken
+from bikeshare_trip_bkp
+where member_casual = 'member' 
+and trip_duration >0 
+and trip_duration <1440
+group by days
+order by days;
+
+```{sql}
+select dayname(started_at) as days, count(*) as rides_taken
+from bikeshare_trip_bkp
+where member_casual = 'casual' 
+and trip_duration >0 
+and trip_duration <1440
+group by days
+order by days;
+```
+
+Finding how many rides was taken by member and casual riders in each month
+
+ ```{sql}
+select  Month, count(*) as ride_count
+from bikeshare_trip_bkp
+where trip_duration >0 and trip_duration<1440
+and member_casual = 'member'
+group by Month
+order by Month;
+```
+
+```{sql}
+select  Month, count(*) as ride_count
+from bikeshare_trip_bkp
+where trip_duration >0 and trip_duration<1440
+and member_casual = 'casual'
+group by Month
+order by Month;
+```
+
+Checking how many rides were taken at each hour of the day for each day by member and casual riders
+
+```{sql}
+select  days, extract(hour from started_at) as hours,
+count(*) as rides_taken
+from bikeshare_trip_bkp
+where trip_duration >0 
+and trip_duration <1440
+and member_casual = 'member'
+group by days, hours
+order by days, hours desc;
+```
+
+```{sql}
+select  days, extract(hour from started_at) as hours,
+count(*) as rides_taken
+from bikeshare_trip_bkp
+where trip_duration >0 
+and trip_duration <1440
+and member_casual = 'casual'
+group by days, hours
+order by days, hours desc;
+```
+
+## Findings
+-
