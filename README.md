@@ -328,4 +328,16 @@ order by days, hours desc;
 ```
 
 ## Findings
--
+- Members have the highest average ride duration of 655.3 mins on Sundays while Casual riders have the highest average ride duration of 666.98 Mins on Wednesdays.
+- July have the highest average ride duration by members and Casual riders with 743.2 Mins and 790.5 Mins respectively.
+- Electric bikes have the highest users, followed by Classic bikes and docked bikes.
+- The total number of rides by Members and Casual riders are 59439 and 21390 respectively.
+- Highest ride count by month is in January with 19044 rides by Members and 6090 rides by Casual riders.
+- Highest ride count by day is on Tuesday by Members and Wednesday by Casual riders.
+- The Members and Casual riders' peak ride hour is on the 17th hour.
+
+## Recommendation 
+- I think the company should target casual riders that have a longer ride duration and give them a membership offer.
+- There should be a promo program targeted for Casual riders that have the characteristics of Members.
+- 
+- 
