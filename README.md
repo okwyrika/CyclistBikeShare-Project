@@ -362,4 +362,5 @@ Based on my analysis, I recommend the following actions
 - There should be a promo program targeted for Casual riders that have the characteristics of Members.
 - Casual riders should be offered various membership option like monthly, quarterly, annual to cater different user preferences.
 
+
 PS: This is my first Data Analytics Project and it is prone to flaws. Constructive criticism on this project is welcomed.
