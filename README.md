@@ -1,3 +1,7 @@
+# Cyclist Case Study
+
+This exercise is from Google Data Analytics Certificate Program.
+
 ## Scenario 
 
 You are a junior data analyst working on the marketing analyst team at Cyclist, a bike-share company in Chicago.The director of the marketing believes the company's future success depends on maximizing the number of annual memberships. Therefore, your team wants to understand how casual riders and annual members use Cyclist bikes differently. From these insights, your team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclist executives must approve your recommendations, so they must be backed up with compelling data insights and professional data visualizations.
@@ -337,7 +341,9 @@ order by days, hours desc;
 - The Members and Casual riders' peak ride hour is on the 17th hour.
 
 ## Recommendation 
-- I think the company should target casual riders that have a longer ride duration and give them a membership offer.
+Based on my analysis, I recommend the following actions
+- Cyclist should target casual riders that have a longer ride duration and give them a time-limited membership offer.
 - There should be a promo program targeted for Casual riders that have the characteristics of Members.
-- 
-- 
+- Casual riders should be offered various membership option like monthly, quarterly, annual to cater different user preferences.
+
+  PS: This is my first Data Analytics Project and it is prone to flaws. Constructive criticism on this project is welcomed.
