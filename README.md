@@ -2,6 +2,17 @@
 
 This exercise is from Google Data Analytics Certificate Program.
 
+## Table Of Contents 
+- [Scenario ](Scenario)
+- [Bussiness Task](Bussiness-Task)
+- [Prepare](Prepare)
+- [Process](Process)
+- [Analyze](Analyze)
+- [Share](Share)
+- [Findings](Findings)
+- [Act](Act)
+
+
 ## Scenario 
 
 You are a junior data analyst working on the marketing analyst team at Cyclist, a bike-share company in Chicago.The director of the marketing believes the company's future success depends on maximizing the number of annual memberships. Therefore, your team wants to understand how casual riders and annual members use Cyclist bikes differently. From these insights, your team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclist executives must approve your recommendations, so they must be backed up with compelling data insights and professional data visualizations.
@@ -331,6 +342,9 @@ group by days, hours
 order by days, hours desc;
 ```
 
+## Share
+I used Tableau Public to carry out my visualizations. Click [here](https://public.tableau.com/app/profile/anurika.chukwunenye/viz/Bike_ridecapstone/Dashboard1) to view my interactive dashboard.
+
 ## Findings
 - Members have the highest average ride duration of 655.3 mins on Sundays while Casual riders have the highest average ride duration of 666.98 Mins on Wednesdays.
 - July have the highest average ride duration by members and Casual riders with 743.2 Mins and 790.5 Mins respectively.
@@ -340,10 +354,12 @@ order by days, hours desc;
 - Highest ride count by day is on Tuesday by Members and Wednesday by Casual riders.
 - The Members and Casual riders' peak ride hour is on the 17th hour.
 
-## Recommendation 
+## Act
+
+### Recommendation 
 Based on my analysis, I recommend the following actions
 - Cyclist should target casual riders that have a longer ride duration and give them a time-limited membership offer.
 - There should be a promo program targeted for Casual riders that have the characteristics of Members.
 - Casual riders should be offered various membership option like monthly, quarterly, annual to cater different user preferences.
 
-  PS: This is my first Data Analytics Project and it is prone to flaws. Constructive criticism on this project is welcomed.
+PS: This is my first Data Analytics Project and it is prone to flaws. Constructive criticism on this project is welcomed.
